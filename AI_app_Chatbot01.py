@@ -18,11 +18,8 @@ with form:
             https://pro.katholiekonderwijs.vlaanderen/kwaliteitsinstrumenten/smartidoelen-stellen 
             zodat het duidelijk leesbaar is voor een {role} op het gebied van leerlingen ondersteunen.
             Verwoord het doel in 1 of 2 mooie samenhangende zinnen en niet in een opsomming van de SMARTi regels, 
-            maar het doel moet wel duidelijk aan de SMARTi eisen voldoen. Antwoord in het Nederlands."""
-            response1 = chatbot_response(PROMPT1);
-        with st.spinner('Even geduld...'):
-            PROMPT2 = f"""Verwoord nu 1 concrete actie om met een leerling van het {niveau} aan de slag te gaan, die past bij het doel {PROMPT1} 
+            maar het doel moet wel duidelijk aan de SMARTi eisen voldoen. 
+            Verwoord nu 1 concrete actie om met een leerling van het {niveau} aan de slag te gaan, die past bij het doel. 
             Antwoord in het Nederlands."""
-            response2 = chatbot_response(PROMPT2);
+            response1 = chatbot_response(PROMPT1);
         st.write(response1)
-        st.write(response2)
