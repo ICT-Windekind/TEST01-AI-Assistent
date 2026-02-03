@@ -2,7 +2,7 @@ import streamlit as st
 from chatbot_functies import chatbot_response
 
 
-st.title("🤖 Mijn AI Assistent 🤖")
+st.title("🤖 Doelen omzetten naar SMARTI Doelen 🤖")
 st.markdown("Joost Delie - 2 februari 2026")
 form = st.form(key="user_settings")
 with form:
