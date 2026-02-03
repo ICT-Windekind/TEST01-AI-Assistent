@@ -17,12 +17,11 @@ with form:
             PROMPT1 = f"""Verwoord je doel {DOEL_concept} aan de hand van volgende site 
             https://pro.katholiekonderwijs.vlaanderen/kwaliteitsinstrumenten/smartidoelen-stellen 
             zodat het duidelijk leesbaar is voor een {role} op het gebied van leerlingen ondersteunen.
-            Geef geen antwoord als het concept niet gerelateerd is aan doelen opstellen. 
             Verwoord het doel in 1 of 2 mooie samenhangende zinnen en niet in een opsomming van de SMARTi regels, 
             maar het doel moet wel duidelijk aan de SMARTi eisen voldoen. Antwoord in het Nederlands."""
             response1 = chatbot_response(PROMPT1);
         with st.spinner('Even geduld...'):
-            PROMPT2 = f"""Verwoord nu 1 concrete actie voor een leerling van het {niveau} om in de klas toe te passen, die past bij het doel {PROMPT1} 
+            PROMPT2 = f"""Verwoord nu 1 concrete actie om met een leerling van het {niveau} aan de slag te gaan, die past bij het doel {PROMPT1} 
             Antwoord in het Nederlands."""
             response2 = chatbot_response(PROMPT2);
         st.write(response1)
