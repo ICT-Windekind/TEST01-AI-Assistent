@@ -14,7 +14,7 @@ with form:
     generate_button = form.form_submit_button("Zet je doel om")
     if generate_button:
         with st.spinner('Even geduld...'):
-            PROMPT1 = f"""Verwoord je doel: {DOEL_concept} , aan de hand van volgende site 
+            PROMPT1 = f"""Verwoord je doel: {DOEL_concept} , aan de hand van SMARTI waarbij je meer informatie vindt op de volgende site 
             https://pro.katholiekonderwijs.vlaanderen/kwaliteitsinstrumenten/smartidoelen-stellen 
             zodat het duidelijk leesbaar is voor iedereen die betrokken is bij het ondersteunen van leerlingen in het {niveau}.
             Voeg ook 1 concrete actie toe die hierbij past om met die leerling aan de slag te gaan. 
