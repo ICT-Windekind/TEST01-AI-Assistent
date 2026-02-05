@@ -7,10 +7,11 @@ st.markdown("Joost Delie - 5 februari 2026")
 form = st.form(key="user_settings")
 with form:
     Onderwerp = st.text_input("Waarover moet het verhaal gaan?", key = "Onderwerp")
+    Naam = st.text_input("Hoe heet het hoofdpersonage?", key = "Naam")
     niveau = st.selectbox("Voor welk publiek wil je het verhaal vertellen?",
-                          ("Volwassenen","Tiener", "Lagere schoolkind", "Kleuter"))
-    waar = st.text_input("Waar het moet verhaal zich afspelen?")
-    wanneer = st.text_input("In welke tijd moet het verhaal zich afspelen?")
+                          ("Volwassenen","Tiener", "Lagere schoolkind", "Kleuter"), key = "niveau")
+    waar = st.text_input("Waar het moet verhaal zich afspelen?", key = "waar")
+    wanneer = st.text_input("In welke tijd moet het verhaal zich afspelen?", key = "wanneer")
     generate_button = form.form_submit_button("Maak je verhaal")
     if generate_button:
         with st.spinner('Even geduld...'):
