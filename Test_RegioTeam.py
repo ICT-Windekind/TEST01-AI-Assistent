@@ -15,7 +15,7 @@ with form:
     generate_button = form.form_submit_button("Maak je verhaal")
     if generate_button:
         with st.spinner('Even geduld...'):
-            PROMPT1 = f"""Schrijf een leuk verhaal van ongeveer 100 woorden met als onderwerp {Onderwerp} dat zich afspeelt
+            PROMPT1 = f"""Schrijf een leuk verhaal van ongeveer 100 woorden over {Naam} met als onderwerp {Onderwerp} dat zich afspeelt
             in {waar} en in de tijdsgeest van {wanneer}. Dit verhaal moet op maat zijn van een {niveau}.
             Antwoord in het Nederlands."""
             response1 = chatbot_response(PROMPT1);
